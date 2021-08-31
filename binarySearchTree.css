@@ -1,0 +1,28 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tree-container {
+    margin-top: 2%;
+}
+#number {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    border: none;
+    background: rgb(15, 218, 184);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
