@@ -16,12 +16,16 @@ html {
 .tree-container {
     margin-top: 2%;
 }
+.main-title {
+  text-align: center;
+}
 #number {
-    height: 2rem;
-    width: 2rem;
+    height: 2.5rem;
+    width: 2.5rem;
     border-radius: 50%;
     border: none;
-    background: rgb(15, 218, 184);
+    /* background: rgb(15, 218, 184); */
+    background: white;
     display: flex;
     justify-content: center;
     align-items: center;
