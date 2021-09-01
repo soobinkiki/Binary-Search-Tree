@@ -13,7 +13,6 @@ const mainTree = data => {
         const treeStructure = (
             <li key={value.data}>
                 {/* <mainTree data={value} /> */}
-                hello
             </li>
         )
         return Object.entries(node).map(function ([key, value]) {
