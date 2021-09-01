@@ -15,7 +15,28 @@ export class TreeCalculate {
         const node = this.root
         if (node === null) {
             this.root = new Node(data) 
-            return
+            return console.log("this.root:", this.root);
+        } else {
+            const searchTree = nodes => {
+                if (data < nodes.data) {
+                    if (nodes.left === null) {
+                        nodes.left = new Node(data)
+                        return
+                    } else if (nodes.data !== null) {
+                        return searchTree(nodes.left)
+                    }
+                } else if (data > nodes.data) {
+                    if (nodes.right === null) {
+                        nodes.right = new Node(data)
+                        return 
+                    } else if (nodes.data !== null) {
+                        return searchTree(nodes.right)
+                    }
+                } else {
+                    return null
+                }
+            } 
+            searchTree(node)
         } 
     }
 }

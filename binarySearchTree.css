@@ -8,6 +8,9 @@ html {
     box-sizing: inherit;
   }
 
+.leftright-container ul {
+  list-style: none;
+}
 .main-container {
     display: flex;
     flex-direction: column;
