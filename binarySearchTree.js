@@ -1,3 +1,5 @@
+import { TreeCalculate } from './utils/utils.js'
+const bst = new TreeCalculate()
 
 let number = document.getElementById("number")
 let rootNumTitle = document.getElementById('rootnum-title')
@@ -17,11 +19,14 @@ const randomNumber = e => {
         number.style.backgroundColor = 'rgb(' + [15,218,184].join(',') + ')';
         rootNumTitle.innerText = ""
     }
+
+    addNumber()
+    
     // {number.innerText == "" ? number.style.backgroundColor = "white" : "red"}
 }
 
 const addNumber = () => {
-
+    bst.addNum(number.textContent)
 }
 
 const removeNumber = (e) => {
