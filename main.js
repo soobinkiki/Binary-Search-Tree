@@ -1,11 +1,11 @@
 import { BinarySearchTree } from './utils/binarySearchTree.js'
 const bst = new BinarySearchTree()
 let number = document.getElementById("number")
-let rootNumTitle = document.getElementById('rootnum-title')
+let subTitle = document.getElementById('rootnum-title')
 
 const getBSTHelper1 = node => {
     var html = ''
-    html += '<span class="tf-nc" id="remove">' + node.data + '</span>'
+    html += '<a class="tf-nc" id="remove">' + node.data + '</a>'
     if (node.left || node.right){
         html += '<ul>' + getBSTHelper2(node)+ '</ul>' 
     }
@@ -37,13 +37,9 @@ const randomNumber = e => {
     var n = null;
     if (e.keyCode == 32) { // keyCode32 => space
         n = numberMinMax(-100, 100)
+        subTitle.innerText = ""
     }
-    if(number.textContent == "") {
-        number.style.backgroundColor = "white"
-    } else {
-        number.style.backgroundColor = 'rgb(' + [15,218,184].join(',') + ')';
-        rootNumTitle.textContent = ""
-    }
+
     addNumber(n)
 }
 
