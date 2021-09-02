@@ -1,19 +1,30 @@
 import { BinarySearchTree } from './utils/binarySearchTree.js'
 const bst = new BinarySearchTree()
-let number = document.getElementById("number")
 let subTitle = document.getElementById('rootnum-title')
+let nodeId = null;
+// console.log(nodeId);
+// let nodeIdSet = document.getElementById('nodeId')
+
+const getBST = () => {
+    var treeHTML = '<ul><li>' + getBSTHelper1(bst.root) + '</ul></li>'
+    var resultDiv = document.querySelector('.mainTree');
+    resultDiv.innerHTML = treeHTML
+}
 
 const getBSTHelper1 = node => {
     var html = ''
-    html += '<a class="tf-nc" id="remove">' + node.data + '</a>'
+    nodeId = node.data.toString()
+    html += '<a class="tf-nc" id="' + node.data + '">' + node.data + '</a>'
     if (node.left || node.right){
         html += '<ul>' + getBSTHelper2(node)+ '</ul>' 
     }
+
     return html 
 }
 
 const getBSTHelper2 = node => {
     var html = '';
+    nodeId = node.data.toString()
     if (node.data){
         if (node.left){
             html += '<li id="' + node.left + '">'
@@ -25,7 +36,7 @@ const getBSTHelper2 = node => {
             html += getBSTHelper1(node.right);
             html += '</li>'
         }
-    }   
+    }
     return html;
 }
 
@@ -39,8 +50,8 @@ const randomNumber = e => {
         n = numberMinMax(-100, 100)
         subTitle.innerText = ""
     }
-
     addNumber(n)
+
 }
 
 const addNumber = (n) => {
@@ -48,17 +59,12 @@ const addNumber = (n) => {
     getBST()    
 }
 
-const getBST = () => {
-    var treeHTML = '<ul><li>' + getBSTHelper1(bst.root) + '</ul></li>'
-    var resultDiv = document.querySelector('.mainTree');
-    resultDiv.innerHTML = treeHTML
-}
 
-const removeNumber = e => {
-    alert("clicked")
-}
+// const removeNumber = e => {
+//     alert("adfaf")
+// }
 
-// const removeTarget = e => {
+// const removeTarget = (e, node) => {
 
 //     // e.target is our targetted element.
 //                 // try doing console.log(e.target.nodeName), it will result LI
@@ -68,9 +74,17 @@ const removeNumber = e => {
 // }
 
 document.addEventListener('keypress', randomNumber)
-document.querySelector(".remove").addEventListener("click", function(e) {
-    // if(e.target && e.target.nodeName == "LI" || e.target && e.target.nodeName == "li") {
-    //     console.log(e.target.id + " was clicked");
-    // }
+// document.querySelectorAll("a").addEventListener("click", () => {
+//     // if(e.target && e.target.nodeName == "LI" || e.target && e.target.nodeName == "li") {
+//     //     console.log(e.target.id + " was clicked");
+//     // }
+//     console.log("passed!!");    
+// })
     
-})
+// if(node.data) {
+//     document.getElementById(`${node.data.toString()}`).addEventListener('click', () => {
+//         console.log("passed!");
+//     })
+// }
+ 
+  

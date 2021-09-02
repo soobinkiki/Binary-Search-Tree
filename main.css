@@ -30,36 +30,39 @@ html {
     /* display: flex;
     justify-content: center;
     align-items: center; */
-  } 
-
-/* a {
-  transform: translateX(-3px);
-} */
-/* 
-ul {
-  transition: width 2s ease;
 }
-   */
-  /* ul {
-    list-style: none;
-  }
-  
-  li {
-    background-color: rgb(15,218,184);
-    height: 2.5rem;
-    width: 2.5rem;
-    border-radius: 50%;
-    border: none;
-  }
-  p {
-    text-align: center;
-    margin-top: auto;
-} */
 
-/* .number li{
-  transform: translateX(-5em);
-} */
+a::before {
+  animation: animate .5s linear
+}
+a::after {
+  animation: animateTwo .5s linear
+}
 
-/* #right > li {
-  transform: ;
-} */
+  @keyframes animate
+  {
+    0% {
+        height: 0px;
+        background-color: rgb(255, 0, 0);
+    }
+    50%{
+        height: 10px;
+        background-color: rgb(255, 0, 0);
+    }
+    100%{
+        height: 20px;
+        background-color: rgb(255, 0, 0);
+    }
+  }
+
+  @keyframes animateTwo
+  {
+    0% {
+        height: 25px;
+        background-color: rgb(255, 0, 0);
+    }
+    100%{
+        height: 25px;
+        background-color: rgb(255, 0, 0);
+    }
+  }
