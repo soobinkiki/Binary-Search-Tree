@@ -11,4 +11,4 @@ It is useful to implement binary search tree in any situation where the elements
   - "treeflex": "^2.0.1"
 4. Please download 'Live Server' extension to run it locally.
 5. Once you complete download the extension, please enable and click the 'Go Live'
-6. It'll automatically direct you to the web browser or type this URL manually (http://127.0.0.1:5500/main.html).
+6. It'll automatically direct you to this URL (http://127.0.0.1:5500) and please click the main.html file. If not directed, please type this URL manually (http://127.0.0.1:5500/main.html).
