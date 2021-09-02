@@ -5,12 +5,10 @@ class Node {
         this.right = null;
     }
 }
-
 export class BinarySearchTree {
     constructor() {
         this.root = null;
     }
-
     addNum(data) {
         const node = this.root
         if (node === null) {

@@ -1,12 +1,12 @@
 html {
     box-sizing: border-box;
   }
-  
-  *,
-  *:before,
-  *:after {
-    box-sizing: inherit;
-  }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 
 .main-container {
     display: flex;
@@ -23,20 +23,15 @@ html {
     height: 2.5rem;
     width: 3.5rem;
     border-radius: 50%;
-    /* border: none; */
     background-color: rgb(9, 245, 205);
     text-align: center;
-
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
 }
 
 a::before {
-  animation: animate .5s linear
+  animation: animate .6s linear
 }
 a::after {
-  animation: animateTwo .5s linear
+  animation: animateTwo .6s linear
 }
 
   @keyframes animate

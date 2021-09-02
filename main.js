@@ -2,8 +2,6 @@ import { BinarySearchTree } from './utils/binarySearchTree.js'
 const bst = new BinarySearchTree()
 let subTitle = document.getElementById('rootnum-title')
 let nodeId = null;
-// console.log(nodeId);
-// let nodeIdSet = document.getElementById('nodeId')
 
 const getBST = () => {
     var treeHTML = '<ul><li>' + getBSTHelper1(bst.root) + '</ul></li>'
@@ -46,7 +44,7 @@ const numberMinMax = (min, max) => {
 
 const randomNumber = e => {
     var n = null;
-    if (e.keyCode == 32) { // keyCode32 => space
+    if (e.keyCode == 32) { 
         n = numberMinMax(-100, 100)
         subTitle.innerText = ""
     }
@@ -59,32 +57,4 @@ const addNumber = (n) => {
     getBST()    
 }
 
-
-// const removeNumber = e => {
-//     alert("adfaf")
-// }
-
-// const removeTarget = (e, node) => {
-
-//     // e.target is our targetted element.
-//                 // try doing console.log(e.target.nodeName), it will result LI
-//     if(e.target && e.target.nodeName == "LI" || e.target && e.target.nodeName == "li") {
-//         console.log(e.target.id + " was clicked");
-//     }
-// }
-
 document.addEventListener('keypress', randomNumber)
-// document.querySelectorAll("a").addEventListener("click", () => {
-//     // if(e.target && e.target.nodeName == "LI" || e.target && e.target.nodeName == "li") {
-//     //     console.log(e.target.id + " was clicked");
-//     // }
-//     console.log("passed!!");    
-// })
-    
-// if(node.data) {
-//     document.getElementById(`${node.data.toString()}`).addEventListener('click', () => {
-//         console.log("passed!");
-//     })
-// }
- 
-  
