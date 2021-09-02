@@ -49,7 +49,6 @@ const randomNumber = e => {
         subTitle.innerText = ""
     }
     addNumber(n)
-
 }
 
 const addNumber = (n) => {
