@@ -1,6 +1,11 @@
 # Binary Search Tree (Alan AI)
 
 ## Description
+Developed the Binary Search Tree application. It is a node-based binary tree data structure which has the following properties:
+- The left subtree of a node contains only nodes with keys lesser than the node’s key.
+- The right subtree of a node contains only nodes with keys greater than the node’s key.
+- The left and right subtree each must also be a binary search tree.
+
 It is useful to implement binary search tree in any situation where the elements can be compared in a less than or greater than manner.
 
 ## How to Install & Run Your Project
