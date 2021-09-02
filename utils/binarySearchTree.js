@@ -6,7 +6,7 @@ class Node {
     }
 }
 
-export class TreeCalculate {
+export class BinarySearchTree {
     constructor() {
         this.root = null;
     }
@@ -15,7 +15,7 @@ export class TreeCalculate {
         const node = this.root
         if (node === null) {
             this.root = new Node(data) 
-            return console.log("this.root:", this.root);
+            return
         } else {
             const searchTree = nodes => {
                 if (data < nodes.data) {

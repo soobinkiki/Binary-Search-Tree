@@ -22,7 +22,7 @@ html {
 .main-title {
   text-align: center;
 }
-/* .tf-custom .tf-nc {
+.tf-custom .tf-nc {
     height: 2.5rem;
     width: 2.5rem;
     border-radius: 50%;
@@ -31,7 +31,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-  } */
+  }
   
   /* ul {
     list-style: none;
