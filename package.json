@@ -1,0 +1,28 @@
+{
+  "devDependencies": {
+    "@babel/cli": "^7.14.8",
+    "@babel/core": "^7.15.0",
+    "@babel/preset-env": "^7.15.0"
+  },
+  "dependencies": {
+    "babel-plugin-transform-react-jsx": "^6.24.1"
+  },
+  "name": "alan",
+  "description": "",
+  "version": "1.0.0",
+  "main": "binarySearchTree.js",
+  "scripts": {
+    "build:watch": "babel --watch src -d lib",
+    "build": "babel src -d lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soobinkiki/alan.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/soobinkiki/alan/issues"
+  },
+  "homepage": "https://github.com/soobinkiki/alan#readme"
+}
