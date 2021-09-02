@@ -5,7 +5,7 @@ let rootNumTitle = document.getElementById('rootnum-title')
 
 const getBSTHelper1 = node => {
     var html = ''
-    html += '<span class="tf-nc">' + node.data + '</span>'
+    html += '<span class="tf-nc" id="remove">' + node.data + '</span>'
     if (node.left || node.right){
         html += '<ul>' + getBSTHelper2(node)+ '</ul>' 
     }
@@ -16,12 +16,12 @@ const getBSTHelper2 = node => {
     var html = '';
     if (node.data){
         if (node.left){
-            html += '<li>'
+            html += '<li id="' + node.left + '">'
             html += getBSTHelper1(node.left);
             html += '</li>'
         }
         if(node.right){
-            html += '<li>'
+            html += '<li id="' + node.right + '">'
             html += getBSTHelper1(node.right);
             html += '</li>'
         }
@@ -58,9 +58,23 @@ const getBST = () => {
     resultDiv.innerHTML = treeHTML
 }
 
-const removeNumber = (e) => {
-    
+const removeNumber = e => {
+    alert("clicked")
 }
 
+// const removeTarget = e => {
+
+//     // e.target is our targetted element.
+//                 // try doing console.log(e.target.nodeName), it will result LI
+//     if(e.target && e.target.nodeName == "LI" || e.target && e.target.nodeName == "li") {
+//         console.log(e.target.id + " was clicked");
+//     }
+// }
+
 document.addEventListener('keypress', randomNumber)
-document.addEventListener('click', removeNumber)
+document.querySelector(".remove").addEventListener("click", function(e) {
+    // if(e.target && e.target.nodeName == "LI" || e.target && e.target.nodeName == "li") {
+    //     console.log(e.target.id + " was clicked");
+    // }
+    
+})
