@@ -1,1 +1,14 @@
-# Binary Search Tree
+# Binary Search Tree (Alan AI)
+
+## Description
+It is useful to implement binary search tree in any situation where the elements can be compared in a less than or greater than manner.
+
+## How to Install & Run Your Project
+1. Clone this repo to your local machine.
+2. Locate to the project folder.
+3. `npm install -y` Run this command to install all of the dependencies
+  - "jsx-vanilla": "^3.1.3",
+  - "treeflex": "^2.0.1"
+4. Please download 'Live Server' extension to run it locally.
+5. Once you complete download the extension, please enable and click the 'Go Live'
+6. It'll automatically direct you to the web browser or type this URL manually (http://127.0.0.1:5500/main.html).
