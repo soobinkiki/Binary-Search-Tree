@@ -8,9 +8,9 @@ html {
     box-sizing: inherit;
   }
 
-.leftright-container ul {
+/* .leftright-container ul {
   list-style: none;
-}
+} */
 .main-container {
     display: flex;
     flex-direction: column;
@@ -22,14 +22,56 @@ html {
 .main-title {
   text-align: center;
 }
-#number {
+/* .tf-custom .tf-nc {
     height: 2.5rem;
     width: 2.5rem;
     border-radius: 50%;
     border: none;
-    /* background: rgb(15, 218, 184); */
     background: white;
     display: flex;
     justify-content: center;
     align-items: center;
+  } */
+  
+  /* ul {
+    list-style: none;
+  }
+  
+  li {
+    background-color: rgb(15,218,184);
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    border: none;
+  }
+  p {
+    text-align: center;
+    margin-top: auto;
+} */
+
+/* .number li{
+  transform: translateX(-5em);
+} */
+
+/* #right > li {
+  transform: ;
+} */
+
+body {
+  padding: 2rem 2rem 1rem;
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+footer {
+  margin-top: auto;
+  text-align: right;
+  font-size: .8em;
+}
+footer a {
+  color: inherit;
+  border-bottom: 1px solid;
+  text-decoration: none;
 }
