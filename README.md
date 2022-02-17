@@ -1,4 +1,4 @@
-# Binary Search Tree (Alan AI)
+# Binary Search Tree
 
 ## Description
 Developed the Binary Search Tree application. It is a node-based binary tree data structure which has the following properties:
